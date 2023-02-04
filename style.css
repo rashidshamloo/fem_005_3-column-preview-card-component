@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 15px;
+  color: hsl(0deg, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  min-height: 1328px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 20px 0 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 50px;
+}
+article img {
+  width: 64px;
+  height: auto;
+}
+article h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+article p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.6rem;
+}
+article button {
+  width: 146px;
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+article button:hover {
+  background: none;
+  border: 1px solid hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+  cursor: pointer;
+}
+
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.sedan button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.suv button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+footer p {
+  color: hsl(179deg, 100%, 13%);
+  margin-bottom: 3px;
+}
+footer i {
+  font-size: 0.9rem;
+}
+footer a {
+  color: hsl(179deg, 100%, 13%);
+}
+footer a:hover {
+  color: hsl(31deg, 77%, 52%);
+  transition: 700ms;
+}
+
+@media only screen and (min-width: 481px) {
+  main {
+    max-width: 920px;
+    min-height: 500px;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

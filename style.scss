@@ -1,0 +1,115 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+//color variables
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 15px;
+  color: $veryLightGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  min-height: 1328px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 20px 0 20px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 50px;
+  img {
+    width: 64px;
+    height: auto;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    color: $transparentWhite;
+    line-height: 1.6rem;
+  }
+  button {
+    width: 146px;
+    border-radius: 25px;
+    height: 50px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+  button:hover {
+    background: none;
+    border: 1px solid $veryLightGray;
+    color: $veryLightGray;
+    cursor: pointer;
+  }
+}
+.sedan {
+  background-color: $brightOrange;
+  button {
+    color: $brightOrange;
+  }
+}
+.suv {
+  background-color: $darkCyan;
+  button {
+    color: $darkCyan;
+  }
+}
+.luxury {
+  background-color: $veryDarkCyan;
+  button {
+    color: $veryDarkCyan;
+  }
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  p {
+    color: $veryDarkCyan;
+    margin-bottom: 3px;
+  }
+  i {
+    font-size: 0.9rem;
+  }
+  a {
+    color: $veryDarkCyan;
+  }
+  a:hover {
+    color: $brightOrange;
+    transition: 700ms;
+  }
+}
+@media only screen and (min-width: 481px) {
+  main {
+    max-width: 920px;
+    min-height: 500px;
+    flex-direction: row;
+  }
+}
