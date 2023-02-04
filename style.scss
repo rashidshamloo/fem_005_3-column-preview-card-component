@@ -16,7 +16,7 @@ $veryLightGray: hsl(0, 0%, 95%);
 
 body {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: $veryLightGray;
   display: flex;
   flex-direction: column;
@@ -28,20 +28,20 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  max-width: 330px;
-  min-height: 1328px;
-  border-radius: 10px;
+  max-width: 20.625rem;
+  min-height: 83rem;
+  border-radius: 0.625rem;
   overflow: hidden;
-  margin: 20px 20px 0 20px;
+  margin: 1.25rem 1.25rem 0 1.25rem;
 }
 article {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 50px;
+  padding: 3.125rem;
   img {
-    width: 64px;
+    width: 4rem;
     height: auto;
   }
   h2 {
@@ -54,13 +54,12 @@ article {
     line-height: 1.6rem;
   }
   button {
-    width: 146px;
-    border-radius: 25px;
-    height: 50px;
+    width: 9.125rem;
+    border-radius: 1.5625rem;
+    height: 3.125rem;
     border: none;
     font-family: "Lexend Deca", sans-serif;
     font-size: 1rem;
-    margin-top: 40px;
   }
   button:hover {
     background: none;
@@ -88,13 +87,13 @@ article {
   }
 }
 footer {
-  padding: 10px;
+  padding: 0.625rem;
   text-align: center;
   font-size: 0.8rem;
   font-family: "Lexend Deca", sans-serif;
   p {
     color: $veryDarkCyan;
-    margin-bottom: 3px;
+    margin-bottom: 0.3rem;
   }
   i {
     font-size: 0.9rem;
@@ -109,8 +108,13 @@ footer {
 }
 @media only screen and (min-width: 481px) {
   main {
-    max-width: 920px;
-    min-height: 500px;
+    max-width: 57.5rem;
+    min-height: 31.25rem;
     flex-direction: row;
+  }
+  article {
+    button {
+      margin-top: 2.5rem;
+    }
   }
 }
