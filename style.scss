@@ -13,7 +13,6 @@ $veryLightGray: hsl(0, 0%, 95%);
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Big Shoulders Display", cursive;
   font-size: 0.9375rem;
@@ -25,7 +24,7 @@ body {
   min-height: 100vh;
   background-color: $veryLightGray;
 }
-main {
+.container {
   display: flex;
   flex-direction: column;
   max-width: 20.625rem;
@@ -34,7 +33,7 @@ main {
   overflow: hidden;
   margin: 1.25rem 1.25rem 0 1.25rem;
 }
-article {
+.card {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -53,36 +52,40 @@ article {
     color: $transparentWhite;
     line-height: 1.6rem;
   }
-  button {
+  a {
     width: 9.125rem;
-    border-radius: 1.5625rem;
     height: 3.125rem;
+    border-radius: 1.5625rem;
     border: none;
     font-family: "Lexend Deca", sans-serif;
     font-size: 1rem;
+    text-decoration: none;
+    background-color: $veryLightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  button:hover {
+  a:hover {
     background: none;
     border: 1px solid $veryLightGray;
     color: $veryLightGray;
-    cursor: pointer;
   }
 }
 .sedan {
   background-color: $brightOrange;
-  button {
+  a {
     color: $brightOrange;
   }
 }
 .suv {
   background-color: $darkCyan;
-  button {
+  a {
     color: $darkCyan;
   }
 }
 .luxury {
   background-color: $veryDarkCyan;
-  button {
+  a {
     color: $veryDarkCyan;
   }
 }
@@ -107,13 +110,13 @@ footer {
   }
 }
 @media only screen and (min-width: 481px) {
-  main {
+  .container {
     max-width: 57.5rem;
     min-height: 31.25rem;
     flex-direction: row;
   }
-  article {
-    button {
+  .card {
+    a {
       margin-top: 2.5rem;
     }
   }
